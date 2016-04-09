@@ -49,7 +49,7 @@ a:hover, a:focus {color: $primary - $shift;}
 
 h1 {font-size: 1.50rem; line-height: 1.875rem; font-weight: 700; margin: 1rem 0 1rem;}
 h2 {font-size: 1.33rem; font-weight: 700; margin: 1rem 0 1rem;}
-h3 {font-size: 1.25rem; font-weight: 700; margin: 1rem 0 1rem;}
+h3 {font-size: 1.00rem; font-weight: 700; margin: 1rem 0 1rem;}
 
 h1.title {text-align: center;}
 
@@ -71,7 +71,21 @@ h1.title {text-align: center;}
 
 .card {background: $white; border-color: $grey-2;}
 .card .eyecatcher {font-size: 7rem; margin: -0.5rem 0 -1.5rem; text-align: center; color: $primary;}
-.card .list-group-item:first-child {border-top: 0;}
+.card .list-group:first-child .list-group-item:first-child {border-top: 0;}
+.card .list-group:last-child .list-group-item:last-child {border-bottom: 0;}
+.card .list-group-item h3 {margin: 0;}
+
+.card a.list-group-item  h3 {color: $primary;}
+.card a.list-group-item:hover h3, .card .list-group-item:focus h3 {color: $primary - $shift;}
+
+
+.card.card-domain {background: $primary; color: $white; border-color: $primary - #111;}
+.card-domain .list-group-item {background: $primary; color: $white; border-color: $primary - $shift;}
+.card-domain .list-group-item:hover, .card-domain .list-group-item:focus {background: $primary - $shift; border-color: $primary - (2 * $shift);}
+.card-domain a.list-group-item h3 {color: $white;}
+.card-domain a.list-group-item:hover h3, .card-domain a.list-group-item:focus h3 {color: $white;}
+.card-domain a.list-group-item small {color: rgba($white, 0.5);}
+
 
 .btn-group-full {display: block; width: 100%; display: flex;}
 .btn-group-full>* {flex-grow: 1; float: none;}
