@@ -10,6 +10,7 @@
         vm.password = '';
 
         vm.signUp = signUp;
+        vm.signingUp = false;
 
         vm.issues;
         vm.issuesGrouped;
@@ -42,6 +43,8 @@
         }
 
         function signUp() {
+            vm.signingUp = true;
+
             $http({
                 method: 'POST',
                 url: '/api/v1/users/signup/user',
