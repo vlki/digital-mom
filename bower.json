@@ -1,0 +1,19 @@
+{
+  "name": "digital-mom",
+  "description": "Yo!",
+  "main": "devserver.js",
+  "authors": [],
+  "homepage": "https://github.com/vlki/digital-mom",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37"
+  }
+}
