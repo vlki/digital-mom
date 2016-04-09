@@ -28,7 +28,8 @@ $brd-drk:           $grey-4;
 $fnt-sm:            0.8rem;
 $fnt-col-faded:     $grey-6;
 
-$primary:           #3498db;
+//$primary:           #3498db;
+$primary:           #0275d8;
 $secondary:         #2ecc71;
 $warning:           #e67e22;
 $danger:            #e74c3c;
@@ -39,15 +40,15 @@ $transparent:       rgba(0,0,0,0);
 
 // global overrides
 
-html {height: 100%; overflow: hidden;}
+html {height: 100%;}
 body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; padding-top: 5rem;}
 
 a {color: $primary;}
 a:hover, a:focus {color: $primary - $shift;}
 
 h1 {font-size: 1.50rem; font-weight: 400; margin: 1rem 0 1rem;}
-h2 {font-size: 1.25rem; font-weight: 400; margin: 1rem 0 1rem;}
-h3 {font-size: 1.00rem; font-weight: 700; margin: 1rem 0 1rem;}
+h2 {font-size: 1.33rem; font-weight: 700; margin: 1rem 0 1rem;}
+h3 {font-size: 1.25rem; font-weight: 700; margin: 1rem 0 1rem;}
 
 // .list-group, .list-group-item {border-color: $brd-col;}
 
@@ -55,3 +56,9 @@ h3 {font-size: 1.00rem; font-weight: 700; margin: 1rem 0 1rem;}
 // input[type=checkbox].chckbx-pls + label, input[type=checkbox].chckbx-pls:checked + label {height: 31px; width: 31px; display: block; padding: 0; margin: 0; cursor: pointer;}
 // input[type=checkbox].chckbx-pls + label:before {content: "\e94a"; color: $grey-3; font-size: 1.9375rem;}
 // input[type=checkbox].chckbx-pls:checked + label:before {content: "\e94b"; color: $primary;}
+
+
+// navbar
+
+.navbar-dark {background: $primary;}
+.navbar-brand {font-weight: 700;}
