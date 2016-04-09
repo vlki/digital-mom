@@ -1,26 +1,33 @@
 <div class="row">
-   <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
-     <div class="card card-block">
-       <h2 class="card-title">Preventivní péče na jednom místě</h2>
-       <p class="card-text">Abychom vám mohli doporučit vhodné kroky zdravotní prevence, potřebujeme znát:</p>
+  <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+    <div class="card">
 
-       <form>
-         <fieldset class="form-group">
-           <label for="dob">Věk</label>
-           <input type="date" class="form-control" id="dob" placeholder="—> datepicker" ng-model="vm.birthday">
-         </fieldset>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="eyecatcher"><span class="Fgr-General-Heart"></span></div>
+          <h1 class="card-title title">Preventivní péče<br />na kterou nemusíte myslet</h1>
+        </li>
+      </ul>
 
-         <fieldset class="form-group">
-           <label for="gender">Pohlaví</label>
-           <div class="btn-group btn-group-full" data-toggle="buttons">
-             <a href="javascript:void(0)" class="btn btn-primary" ng-click="vm.setGender('male')" ng-class="{ active: vm.gender == 'male' }">Muž</a>
-             <a href="javascript:void(0)" class="btn btn-primary" ng-click="vm.setGender('female')" ng-class="{ active: vm.gender == 'female' }">Žena</a>
-             <a href="javascript:void(0)" class="btn btn-primary" ng-click="vm.setGender('none')" ng-class="{ active: vm.gender == 'none' }">Neuvedu</a>
-           </div>
-         </fieldset>
-         <button class="btn btn-primary" ng-click="vm.cont()">Začít!</button>
-       </form>
+      <div class="card-block">
+        <p>Abychom vám mohli doporučit vhodné kroky zdravotní prevence, potřebujeme od vás pár věcí vědět.</p>
+        <form>
+          <fieldset class="form-group">
+            <label for="gender">Pohlaví</label>
+            <div class="btn-group btn-group-full" data-toggle="buttons">
+              <a href="javascript:void(0)" class="btn btn-primary" ng-click="vm.setGender('male')" ng-class="{ active: vm.gender == 'male' }">Muž</a>
+              <a href="javascript:void(0)" class="btn btn-primary" ng-click="vm.setGender('female')" ng-class="{ active: vm.gender == 'female' }">Žena</a>
+              <a href="javascript:void(0)" class="btn btn-primary" ng-click="vm.setGender('none')" ng-class="{ active: vm.gender == 'none' }">Neuvedu</a>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="dob">Věk</label>
+            <input type="date" class="form-control" id="dob" placeholder="—> datepicker" ng-model="vm.birthday">
+          </fieldset>
+          <button class="btn btn-primary" ng-click="vm.cont()">Začít!</button>
+        </form>
+      </div>
 
-     </div>
-   </div>
- </div>
+    </div>
+  </div>
+</div>

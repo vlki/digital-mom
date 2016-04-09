@@ -47,9 +47,11 @@ body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 
 a {color: $primary;}
 a:hover, a:focus {color: $primary - $shift;}
 
-h1 {font-size: 1.50rem; font-weight: 400; margin: 1rem 0 1rem;}
+h1 {font-size: 1.50rem; line-height: 1.875rem; font-weight: 700; margin: 1rem 0 1rem;}
 h2 {font-size: 1.33rem; font-weight: 700; margin: 1rem 0 1rem;}
 h3 {font-size: 1.25rem; font-weight: 700; margin: 1rem 0 1rem;}
+
+h1.title {text-align: center;}
 
 // .list-group, .list-group-item {border-color: $brd-col;}
 
@@ -68,8 +70,11 @@ h3 {font-size: 1.25rem; font-weight: 700; margin: 1rem 0 1rem;}
 // cards
 
 .card {background: $white; border-color: $grey-2;}
+.card .eyecatcher {font-size: 7rem; margin: -0.5rem 0 -1.5rem; text-align: center; color: $primary;}
+.card .list-group-item:first-child {border-top: 0;}
 
-.btn-group-full {display: block;}
+.btn-group-full {display: block; width: 100%; display: flex;}
+.btn-group-full>* {flex-grow: 1; float: none;}
 
 
 form .form-group label {font-size: 0.875rem;}
