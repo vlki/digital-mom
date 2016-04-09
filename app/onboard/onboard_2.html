@@ -3,12 +3,16 @@
     <p>Seznam par issues a motivacni slovo!</p>
   </div>
 </div>
-<div class="row">
+<div class="row" ng-repeat="item in vm.issues">
   <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
     <div class="card card-block">
-      <h2 class="card-title">Care Item Title</h2>
+      <h2 class="card-title">{{ item.name }}</h2>
       <p class="card-text">...</p>
-      <p class="card-text"><small>Každé 3 měsíce</small></p>
+      <p class="card-text">
+          <small>{{ item.subgroup }}, </small>
+          <small ng-show="item.period === 12">každý rok</small>
+          <small ng-show="item.period === 24">každé dva roky</small>
+      </p>
       <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
     </div>
   </div>

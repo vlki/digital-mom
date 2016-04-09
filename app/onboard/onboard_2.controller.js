@@ -18,7 +18,15 @@
         ////////
 
         function activate() {
-            // $http
+            $http({
+                method: 'GET',
+                url: '/api/v1/issues'
+            }).then(function successCallback(response) {
+                vm.issues = response.data.issues.slice(0, 3);
+            }).catch(function errorCallback(response) {
+                console.error(response);
+                alert('Something went terribly wrong here :(');
+            });
         }
 
         function signUp() {
@@ -36,7 +44,7 @@
                 $state.go('list');
             }).catch(function errorCallback(response) {
                 console.error(response);
-                alert('Something went terribly wrong!');
+                alert('Something went terribly wrong here :(');
             });
         }
     }
