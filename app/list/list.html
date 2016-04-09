@@ -1,77 +1,41 @@
-
-     <div class="row">
-        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
-          <div class="card card-block">
-            <h2 class="card-title">Care Item Title</h2>
-            <p class="card-text">...</p>
-            <p class="card-text"><small>Každé 3 měsíce</small></p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
-          <div class="card card-inverse card-primary">
-            <!-- <img class="card-img-top" data-src="..." alt="Card image cap"> -->
-            <div class="card-block">
-              <h2 class="card-title">Jak fungujeme?</h2>
-              <div class="card-text">
-                <ul>
-                  <li><strong>Osobní údaje</strong> &mdash; děláme minimum.</li>
-                  <li><strong>Další</strong> &mdash; ...</li>
-                  <li><strong>III</strong> &mdash; ...</li>
-                </ul>
-              </div>
-              <a href="#" class="btn btn-primary">Souhlasím</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="row">
-       <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
-         <div class="card card-block">
-           <form class="form-signin">
-             <h2 class="form-signin-heading">Please sign in</h2>
-             <label for="inputEmail" class="sr-only">Email address</label>
-             <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-             <label for="inputPassword" class="sr-only">Password</label>
-             <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-             <div class="checkbox">
-               <label>
-                 <input type="checkbox" value="remember-me"> Remember me
-               </label>
-             </div>
-             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-           </form>
-         </div>
-       </div>
-     </div>
-
-     <div class="row">
-      <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
-        <div class="card card-block">
-          <img class="card-img-top" data-src="..." alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-          <div class="card-block">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-      </div>
+<div class="row" ng-show="vm.issuesPreventive && vm.issuesPreventive.length > 0">
+  <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+    <div class="card card-domain card-domain-prev">
+      <div class="card-block">
+      <h2 class="card-title">Preventivní prohlídky</h2>
+      <p class="card-subtitle">Věděli jste, že ...</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <a ng-click="vm.goToDetail(issue)" class="list-group-item" href="javascript:void(0);" ng-repeat="issue in vm.issuesPreventive">
+        <h3>{{ issue.name }}</h3>
+        <div ng-show="issue.period === 6"><small class="text-muted">Dvakrát ročně</small></div>
+        <div ng-show="issue.period === 12"><small class="text-muted">Jednou ročně</small></div>
+        <div ng-show="issue.period === 24"><small class="text-muted">Jednou za dva roky</small></div>
+        <div ng-show="!issue.period && issue.startAge === 30 && issue.endAge === 30"><small class="text-muted">Jedenkrát ve věku 30</small></div>
+      </a>
+    </ul>
     </div>
 
-     <footer>
-       <p>&copy; Digital Mom 2016</p>
-     </footer>
+  </div>
+</div>
+
+<div class="row" ng-show="vm.issuesScreening && vm.issuesScreening.length > 0">
+  <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+    <div class="card card-domain card-domain-scr">
+      <div class="card-block">
+      <h2 class="card-title">Screening prohlídky</h2>
+      <p class="card-subtitle">Věděli jste, že ...</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <a class="list-group-item" href="javascript:void(0);" ng-repeat="issue in vm.issuesScreening">
+        <h3>{{ issue.name }}</h3>
+        <div ng-show="issue.period === 6"><small class="text-muted">Dvakrát ročně</small></div>
+        <div ng-show="issue.period === 12"><small class="text-muted">Jednou ročně</small></div>
+        <div ng-show="issue.period === 24"><small class="text-muted">Jednou za dva roky</small></div>
+        <div ng-show="!issue.period && issue.startAge === 30 && issue.endAge === 30"><small class="text-muted">Jedenkrát ve věku 30</small></div>
+      </a>
+    </ul>
+    </div>
+
+  </div>
+</div>

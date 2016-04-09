@@ -53,7 +53,7 @@
                 }
             }).then(function signedUpCallback(response) {
                 // User is signed here as the response had Set-Cookie header
-                $state.go('list');
+                $state.go('list', { birthday: $state.params.birthday, gender: $state.params.gender });
             }).catch(function errorCallback(response) {
                 console.error(response);
                 alert('Something went terribly wrong here :(');
