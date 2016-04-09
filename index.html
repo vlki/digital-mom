@@ -17,12 +17,14 @@
     <body id="digitalmom-webapp" class="fixed">
         <div ui-view></div>
 
+        <!-- Including jQuery before angular so it replaces angular's internal jqLite -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
 
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/digitalmom.jquery.js"></script>
-        <script src="js/angular.js"></script>
-        <script src="js/angular-ui-router/angular-ui-router.js"></script>
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
         <script src="bower_components/moment/moment.js"></script>
         <script src="bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
