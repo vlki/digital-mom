@@ -1,0 +1,266 @@
+@font-face {
+	font-family: 'figure';
+	src:url('fonts/figure.eot?cwmwbd');
+	src:url('fonts/figure.eot?cwmwbd#iefix') format('embedded-opentype'),
+		url('fonts/figure.ttf?cwmwbd') format('truetype'),
+		url('fonts/figure.woff?cwmwbd') format('woff'),
+		url('fonts/figure.svg?cwmwbd#figure') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="Fgr-"], [class*=" Fgr-"] {
+	font-family: 'figure';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.Fgr-Control-OptionOff:before {
+	content: "\e94a";
+}
+.Fgr-Control-OptionOn:before {
+	content: "\e94b";
+}
+.Fgr-General-Cross:before {
+	content: "\e94c";
+}
+.Fgr-General-Minus:before {
+	content: "\e94d";
+}
+.Fgr-General-Plus:before {
+	content: "\e94e";
+}
+.Fgr-General-Tick:before {
+	content: "\e94f";
+}
+.Fgr-Drinks-Cup:before {
+	content: "\e900";
+}
+.Fgr-Drinks-Donut:before {
+	content: "\e901";
+}
+.Fgr-Drinks-TeaCup:before {
+	content: "\e902";
+}
+.Fgr-Food-AsianSoup:before {
+	content: "\e903";
+}
+.Fgr-Food-Bagel:before {
+	content: "\e904";
+}
+.Fgr-Food-CoffeeMug:before {
+	content: "\e905";
+}
+.Fgr-Food-Desserts:before {
+	content: "\e906";
+}
+.Fgr-General-Book:before {
+	content: "\e907";
+}
+.Fgr-General-Briefcase:before {
+	content: "\e908";
+}
+.Fgr-General-Car:before {
+	content: "\e909";
+}
+.Fgr-General-Cash:before {
+	content: "\e90a";
+}
+.Fgr-General-CircleDeny:before {
+	content: "\e90b";
+}
+.Fgr-General-CircleMinus:before {
+	content: "\e90c";
+}
+.Fgr-General-CirclePlay:before {
+	content: "\e90d";
+}
+.Fgr-General-CirclePlus:before {
+	content: "\e90e";
+}
+.Fgr-General-CircleCross:before {
+	content: "\e90f";
+}
+.Fgr-General-CircleTick:before {
+	content: "\e910";
+}
+.Fgr-General-Clock:before {
+	content: "\e911";
+}
+.Fgr-General-Cloud:before {
+	content: "\e912";
+}
+.Fgr-General-EllipsisHorizontal:before {
+	content: "\e913";
+}
+.Fgr-General-EllipsisVertical:before {
+	content: "\e914";
+}
+.Fgr-General-Export:before {
+	content: "\e915";
+}
+.Fgr-General-Import:before {
+	content: "\e916";
+}
+.Fgr-General-Folder:before {
+	content: "\e917";
+}
+.Fgr-General-Heart:before {
+	content: "\e918";
+}
+.Fgr-General-Inbox:before {
+	content: "\e919";
+}
+.Fgr-General-Letter:before {
+	content: "\e91a";
+}
+.Fgr-General-Lightbulb:before {
+	content: "\e91b";
+}
+.Fgr-General-Lock:before {
+	content: "\e91c";
+}
+.Fgr-General-Loupe:before {
+	content: "\e91d";
+}
+.Fgr-General-MapPin:before {
+	content: "\e91e";
+}
+.Fgr-General-Map:before {
+	content: "\e91f";
+}
+.Fgr-General-Pearl:before {
+	content: "\e920";
+}
+.Fgr-General-Pencil:before {
+	content: "\e921";
+}
+.Fgr-General-Person:before {
+	content: "\e922";
+}
+.Fgr-General-PriceTag:before {
+	content: "\e923";
+}
+.Fgr-General-Reload:before {
+	content: "\e924";
+}
+.Fgr-General-Report:before {
+	content: "\e925";
+}
+.Fgr-General-Screen:before {
+	content: "\e926";
+}
+.Fgr-General-Sprocket:before {
+	content: "\e927";
+}
+.Fgr-General-Star:before {
+	content: "\e928";
+}
+.Fgr-General-Store:before {
+	content: "\e929";
+}
+.Fgr-General-Trash:before {
+	content: "\e92a";
+}
+.Fgr-General-Truck:before {
+	content: "\e92b";
+}
+.Fgr-General-Wallet:before {
+	content: "\e92c";
+}
+.Fgr-General-Watch:before {
+	content: "\e92d";
+}
+.Fgr-Small-ArcUp:before {
+	content: "\e92e";
+}
+.Fgr-Small-ArcRight:before {
+	content: "\e92f";
+}
+.Fgr-Small-ArcDown:before {
+	content: "\e930";
+}
+.Fgr-Small-ArcLeft:before {
+	content: "\e931";
+}
+.Fgr-Small-Hamburger:before {
+	content: "\e932";
+}
+.Fgr-Small-Grid:before {
+	content: "\e933";
+}
+.Fgr-Small-List:before {
+	content: "\e934";
+}
+.Fgr-Small-Loupe:before {
+	content: "\e935";
+}
+.Fgr-Small-Undo:before {
+	content: "\e936";
+}
+.Fgr-Small-Redo:before {
+	content: "\e937";
+}
+.Fgr-Small-TriangleUp:before {
+	content: "\e938";
+}
+.Fgr-Small-TriangleRight:before {
+	content: "\e939";
+}
+.Fgr-Small-TriangleDown:before {
+	content: "\e93a";
+}
+.Fgr-Small-TriangleLeft:before {
+	content: "\e93b";
+}
+.Fgr-Tiny-ArcUp:before {
+	content: "\e93c";
+}
+.Fgr-Tiny-ArcRight:before {
+	content: "\e93d";
+}
+.Fgr-Tiny-ArcDown:before {
+	content: "\e93e";
+}
+.Fgr-Tiny-ArcLeft:before {
+	content: "\e93f";
+}
+.Fgr-Tiny-Hamburger:before {
+	content: "\e940";
+}
+.Fgr-Tiny-Grid:before {
+	content: "\e941";
+}
+.Fgr-Tiny-List:before {
+	content: "\e942";
+}
+.Fgr-Tiny-Loupe:before {
+	content: "\e943";
+}
+.Fgr-TIny-Undo:before {
+	content: "\e944";
+}
+.Fgr-Tiny-Redo:before {
+	content: "\e945";
+}
+.Fgr-Tiny-TriangleUp:before {
+	content: "\e946";
+}
+.Fgr-Tiny-TriangleRight:before {
+	content: "\e947";
+}
+.Fgr-Tiny-TriangleDown:before {
+	content: "\e948";
+}
+.Fgr-Tiny-TriangleLeft:before {
+	content: "\e949";
+}
+

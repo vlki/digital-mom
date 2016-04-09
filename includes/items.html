@@ -1,0 +1,72 @@
+<div class="row list-details">
+    
+    <div class="col-sm-8 list">
+        <h1 class="agenda-title">Item Management</h1>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="n in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21] track by $index">
+                <div class="row item">
+                    <div class="col-md-4 col">
+                        <strong>Cappuccino</strong>
+                        <div class="mods">Small, Medium, Large</div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <strong>$6.50</strong>
+                        <div class="mods">Extra Foamy, Lungo, &hellip;</div>
+                    </div>
+                    <div class="col-md-4 col">
+                        <strong class="cat">Hot Drinks</strong>
+                        <div class="mods">NYC Prepared Food Tax, NYC Sales Tax</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="col-sm-4 details">
+        <h2>Details</h2>
+        <div class="mods-edit">
+            <h3 class="mod-title">Basic</h3>
+            <div class="form form-basic">
+                <fieldset class="form-group">
+                    <label for="name">Item Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name" value="Cappuccino">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="price">Price</label>
+                    <input type="text" class="form-control" id="price" placeholder="Price" value="$3.50">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="cat">Category</label>
+                    <select class="c-select" id="cat">
+                        <option selected>Unassigned</option>
+                        <option value="1">Drinks</option>
+                        <option value="2">Meals</option>
+                        <option value="3">Mana &amp; Other Superfoods</option>
+                    </select>
+                </fieldset>
+            </div>
+        </div>
+        <div class="mods-edit" ng-repeat="mod in ['Option', 'Modification', 'Tax'] track by $index">
+            <h3 class="mod-title">{{mod}}s</h3>
+            <div class="form-inline mod" ng-repeat="n in [1,2,3,4,5,6] track by $index">
+                <div class="form">
+                    <div class="status">
+                        <input type="checkbox" class="chckbx-pls" id="mod-status-{{mod}}-{{n}}" checked><label class="status chckbx-pls" for="mod-status-{{mod}}-{{n}}"></label>
+                    </div>
+                    <div class="name">
+                        <input type="text" class="form-control name" placeholder="Option Name" value="Small">
+                        <div class="desc">Inherited from <strong>Drinks</strong></div>
+                    </div>
+                    <div class="price">
+                        <input type="text" class="form-control price" placeholder="Price" value="$2.50">
+                        <div class="desc">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="add">
+                <a href="#">Add {{mod}}</a>
+            </div>
+        </div>
+    </div>
+    
+</div>

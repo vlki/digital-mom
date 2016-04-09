@@ -1,0 +1,56 @@
+// variables
+
+$white:             #FFFFFF;
+$grey-1:            #ECEFF2;
+$grey-2:            #E0E4E9;
+$grey-3:            #CAD1D9;
+$grey-4:            #B5BECA;
+$grey-5:            #9FACBB;
+$grey-6:            #8A99AC;
+$grey-7:            #75869D;
+$grey-8:            #62748A;
+$grey-9:            #536275;
+$grey-10:           #445060;
+$grey-11:           #353E4A;
+$grey-12:           #252C35;
+$black:             #000000;
+
+$brd-wdt:           0.0625rem;
+$brd-rds:           0.2rem;
+$brd-col:           $grey-3;
+$brd-drk:           $grey-4;
+
+$fnt-sm:            0.8rem;
+$fnt-col-faded:     $grey-6;
+
+$primary:           #FFF;
+$shift:             #222;
+$transparent:       rgba(0,0,0,0);
+
+
+// global overrides
+
+html {height: 100%; overflow: hidden;}
+body {font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400;}
+
+a {color: $primary;}
+a:hover, a:focus {color: $primary - $shift;}
+
+a:hover {color: $primary - $shift;}
+
+h1 {font-size: 1.50rem; font-weight: 400; margin: 1rem 0 1rem;}
+h2 {font-size: 1.25rem; font-weight: 400; margin: 1rem 0 1rem;}
+h3 {font-size: 1.00rem; font-weight: 700; margin: 1rem 0 1rem;}
+
+.list-group, .list-group-item {border-color: $brd-col;}
+
+input[type=checkbox].chckbx-pls {display: none;}
+input[type=checkbox].chckbx-pls + label, input[type=checkbox].chckbx-pls:checked + label {height: 31px; width: 31px; display: block; padding: 0; margin: 0; cursor: pointer;}
+input[type=checkbox].chckbx-pls + label:before {content: "\e94a"; color: $grey-3; font-size: 1.9375rem;}
+input[type=checkbox].chckbx-pls:checked + label:before {content: "\e94b"; color: $primary;}
+
+// navbar
+
+// .navbar {border-bottom: $brd-wdt solid $brd-drk; border-radius: 0; background: $white;}
+// .navbar .container-fluid {padding: 0;}
+// .navbar .navbar-brand {font-weight: 700; color: $primary; margin-right: 2rem;}
