@@ -6,7 +6,7 @@
     function setupStates($stateProvider) {
         $stateProvider
             .state('list', {
-                url: '/list',
+                url: '/',
                 parent: 'layout',
                 controller: 'ListController',
                 controllerAs: 'vm',

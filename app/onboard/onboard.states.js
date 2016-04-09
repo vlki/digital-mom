@@ -18,6 +18,6 @@
                 controller: 'Onboard2Controller',
                 controllerAs: 'vm',
                 templateUrl: 'app/onboard/onboard_2.html'
-            })
+            });
     }
 })();

@@ -25,14 +25,12 @@
                     email: vm.email,
                     password: vm.password
                 }
-            }).then(function successCallback(response) {
-                debugger;
-                // this callback will be called asynchronously
-                // when the response is available
-            }, function errorCallback(response) {
-                debugger;
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
+            }).then(function signedUpCallback(response) {
+                // User is signed here as the response had Set-Cookie header
+                $state.go('list');
+            }).catch(function errorCallback(response) {
+                console.error(response);
+                alert('Something went terribly wrong!');
             });
         }
     }
