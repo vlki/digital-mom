@@ -4,33 +4,50 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row" ng-show="vm.issuesPreventive && vm.issuesPreventive.length > 0">
   <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
     <div class="card card-domain card-domain-prev">
       <div class="card-block">
       <h2 class="card-title">Preventivní prohlídky</h2>
       <p class="card-subtitle">Věděli jste, že ...</p>
-</div>
-<ul class="list-group list-group-flush">
-  <a class="list-group-item" href="#">
-    <h3>Celková preventivní prohlídka u praktického lékaře</h3>
-    <div><small class="text-muted">Jednou ročně</small></div>
-  </a>
-  <a class="list-group-item" href="#">
-    <h3>Preventivní prohlídka u zubního lékaře</h3>
-    <div><small class="text-muted">Jednou ročně</small></div>
-  </a>
-</ul>
+    </div>
+    <ul class="list-group list-group-flush">
+      <a class="list-group-item" href="javascript:void(0);" ng-repeat="issue in vm.issuesPreventive">
+        <h3>{{ issue.name }}</h3>
+        <div ng-show="issue.period === 6"><small class="text-muted">Dvakrát ročně</small></div>
+        <div ng-show="issue.period === 12"><small class="text-muted">Jednou ročně</small></div>
+        <div ng-show="issue.period === 24"><small class="text-muted">Jednou za dva roky</small></div>
+        <div ng-show="!issue.period && issue.startAge === 30 && issue.endAge === 30"><small class="text-muted">Jedenkrát ve věku 30</small></div>
+      </a>
+    </ul>
     </div>
 
+  </div>
+</div>
 
+<div class="row" ng-show="vm.issuesScreening && vm.issuesScreening.length > 0">
+  <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+    <div class="card card-domain card-domain-preventative">
+      <div class="card-block">
+      <h2 class="card-title">Screening prohlídky</h2>
+      <p class="card-subtitle">Věděli jste, že ...</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <a class="list-group-item" href="javascript:void(0);" ng-repeat="issue in vm.issuesScreening">
+        <h3>{{ issue.name }}</h3>
+        <div ng-show="issue.period === 6"><small class="text-muted">Dvakrát ročně</small></div>
+        <div ng-show="issue.period === 12"><small class="text-muted">Jednou ročně</small></div>
+        <div ng-show="issue.period === 24"><small class="text-muted">Jednou za dva roky</small></div>
+        <div ng-show="!issue.period && issue.startAge === 30 && issue.endAge === 30"><small class="text-muted">Jedenkrát ve věku 30</small></div>
+      </a>
+    </ul>
+    </div>
 
   </div>
 </div>
 
 
-
-<div class="row" ng-repeat="item in vm.issues">
+<!-- <div class="row" ng-repeat="item in vm.issues">
   <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
     <div class="card card-block">
       <h2 class="card-title">{{ item.name }}</h2>
@@ -40,10 +57,10 @@
           <small ng-show="item.period === 12">každý rok</small>
           <small ng-show="item.period === 24">každé dva roky</small>
       </p>
-      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="row">
   <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
