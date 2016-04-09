@@ -13,7 +13,7 @@
                 templateUrl: 'app/onboard/onboard_1.html'
             })
             .state('onboard-2', {
-                url: '/sign-up?age&sex',
+                url: '/sign-up?gender&birthday',
                 parent: 'layout',
                 controller: 'Onboard2Controller',
                 controllerAs: 'vm',

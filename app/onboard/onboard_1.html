@@ -7,27 +7,16 @@
        <form>
          <fieldset class="form-group">
            <label for="dob">Věk</label>
-           <input type="date" class="form-control" id="dob" placeholder="—> datepicker" ng-model="vm.age">
+           <input type="date" class="form-control" id="dob" placeholder="—> datepicker" ng-model="vm.birthday">
          </fieldset>
 
          <fieldset class="form-group">
            <label for="gender">Pohlaví</label>
            <div class="btn-group btn-group-full" data-toggle="buttons">
-             <label class="btn btn-primary active">
-               <input type="radio" name="gender" id="1" autocomplete="off" checked> Muž
-             </label>
-             <label class="btn btn-primary">
-               <input type="radio" name="gender" id="2" autocomplete="off"> Žena
-             </label>
-             <label class="btn btn-primary">
-               <input type="radio" name="gender" id="0" autocomplete="off"> Neuvedu
-             </label>
+             <a href="javascript:void(0)" class="btn btn-primary" ng-click="vm.setGender('male')" ng-class="{ active: vm.gender == 'male' }">Muž</a>
+             <a href="javascript:void(0)" class="btn btn-primary" ng-click="vm.setGender('female')" ng-class="{ active: vm.gender == 'female' }">Žena</a>
+             <a href="javascript:void(0)" class="btn btn-primary" ng-click="vm.setGender('none')" ng-class="{ active: vm.gender == 'none' }">Neuvedu</a>
            </div>
-           <!-- <select ng-model="vm.sex">
-               <option value="male">Muž</option>
-               <option value="female">Žena</option>
-               <option value="undefined">Neuvedu</option>
-           </select> -->
          </fieldset>
          <button class="btn btn-primary" ng-click="vm.cont()">Začít!</button>
        </form>
@@ -35,17 +24,3 @@
      </div>
    </div>
  </div>
-
-
-<!-- <form>
-    Vek:
-    <input type="number" ng-model="vm.age" />
-
-    Pohlavi:
-    <select ng-model="vm.sex">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-    </select>
-
-    <button ng-click="vm.cont()">Continue!</button>
-</form> -->
