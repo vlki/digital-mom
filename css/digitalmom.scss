@@ -69,6 +69,9 @@ h1.title {text-align: center;}
 
 // cards
 
+$dom-prev: #9b59b6;
+$dom-scr: #f39c12;
+
 .card {background: $white; border-color: $grey-2;}
 .card .eyecatcher {font-size: 7rem; margin: -0.5rem 0 -1.5rem; text-align: center; color: $primary;}
 .card .list-group:first-child .list-group-item:first-child {border-top: 0;}
@@ -78,23 +81,26 @@ h1.title {text-align: center;}
 .card a.list-group-item  h3 {color: $primary;}
 .card a.list-group-item:hover h3, .card .list-group-item:focus h3 {color: $primary - $shift;}
 
+.card .list-group-item .collapsible {margin-top: 1rem;}
+.card .list-group-item .collapsible-title {margin: 0; cursor: pointer; color: $dom-prev;}
+.card .list-group-item .collapsible-title:hover, .card .list-group-item .collapsible-title:focus {color: $dom-prev - $shift;}
+
 .card.card-domain {background: $primary; color: $white; border-color: $primary - #111;}
 .card-domain .list-group-item {background: $primary; color: $white; border-color: $primary - $shift;}
 .card-domain .list-group-item:hover, .card-domain .list-group-item:focus {background: $primary - $shift; border-color: $primary - (2 * $shift);}
 .card-domain a.list-group-item h3 {color: $white;}
 .card-domain a.list-group-item:hover h3, .card-domain a.list-group-item:focus h3 {color: $white;}
-.card-domain a.list-group-item small {color: rgba($white, 0.5);}
+.card-domain a.list-group-item small {color: rgba($white, 0.6);}
 
-$dom-prev: #9b59b6;
 .card.card-domain-prev.card-domain {background: $dom-prev; border-color: $dom-prev - #111;}
 .card.card-domain-prev.card-domain .list-group-item {background: $dom-prev; border-color: $dom-prev - $shift;}
 .card.card-domain-prev.card-domain .list-group-item:hover, .card-domain .list-group-item:focus {background: $dom-prev - $shift; border-color: $dom-prev - (2 * $shift);}
 
-$dom-scr: #f39c12;
 .card.card-domain-scr.card-domain {background: $dom-scr; border-color: $dom-scr - #111;}
 .card.card-domain-scr.card-domain .list-group-item {background: $dom-scr; border-color: $dom-scr - $shift;}
 .card.card-domain-scr.card-domain .list-group-item:hover, .card-domain .list-group-item:focus {background: $dom-scr - $shift; border-color: $dom-scr - (2 * $shift);}
 
+.card img {max-width: 100%;}
 
 .btn-group-full {display: block; width: 100%; display: flex;}
 .btn-group-full>* {flex-grow: 1; float: none;}
