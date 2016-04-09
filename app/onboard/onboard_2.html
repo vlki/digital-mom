@@ -1,17 +1,47 @@
-<div>Seznam par issues a motivacni slovo!</div>
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+    <p>Seznam par issues a motivacni slovo!</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+    <div class="card card-block">
+      <h2 class="card-title">Care Item Title</h2>
+      <p class="card-text">...</p>
+      <p class="card-text"><small>Každé 3 měsíce</small></p>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+  </div>
+</div>
 
-<form>
-    Email:
-    <input type="text" ng-model="vm.email" />
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+    <div class="card card-block">
+      <h2 class="card-title">Plánujte svou prevenci s námi</h2>
+      <p class="card-text">Pečujte dlouhodobě o zdraví své a svých blízkých. Vytvořte si u&nbsp;nás účet a&nbsp;pak vše klidně pusťte z&nbsp;hlavy. Budeme na vaši prevenci myslet za vás.</p>
+      <form>
+        <fieldset class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" ng-model="vm.email">
+        </fieldset>
 
-    Password:
-    <input type="text" ng-model="vm.password" />
+        <fieldset class="form-group">
+          <label for="password">Heslo</label>
+          <input type="password" class="form-control" id="password" ng-model="vm.password">
+        </fieldset>
 
-    First:
-    <input type="text" ng-model="vm.firstName" />
+        <!-- <label for="fullname">Celé jméno</label>
+        <input type="text" class="form-control" id="fullname" ng-model="vm.fullname"> -->
 
-    Last:
-    <input type="text" ng-model="vm.lastName" />
+        <!-- First:
+        <input type="text" ng-model="vm.firstName" />
 
-    <button ng-click="vm.signUp()">Sign up!</button>
-</form>
+        Last:
+        <input type="text" ng-model="vm.lastName" /> -->
+
+        <button class="btn btn-primary" ng-click="vm.signUp()">Zaregistrovat</button>
+      </form>
+
+  </div>
+</div>
+</div>
