@@ -1,16 +1,16 @@
 (function() {
-    angular.module('app.list').config(setupStates);
+    angular.module('app.auth').config(setupStates);
 
     setupStates.$inject = ['$stateProvider'];
 
     function setupStates($stateProvider) {
         $stateProvider
-            .state('list', {
-                url: '/list',
+            .state('signup', {
+                url: '/',
                 parent: 'layout',
-                controller: 'ListController',
+                controller: 'SignupController',
                 controllerAs: 'vm',
-                templateUrl: 'app/list/list.html'
+                templateUrl: 'app/auth/signup.html'
             })
     }
 })();
