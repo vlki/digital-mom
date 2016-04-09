@@ -18,6 +18,13 @@
                 controller: 'DetailController',
                 controllerAs: 'vm',
                 templateUrl: 'app/list/detail.html'
+            })
+            .state('planned', {
+                url: '/planned?id',
+                parent: 'layout',
+                controller: 'PlannedController',
+                controllerAs: 'vm',
+                templateUrl: 'app/list/planned.html'
             });
     }
 })();
