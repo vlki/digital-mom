@@ -40,7 +40,7 @@ $transparent:       rgba(0,0,0,0);
 // global overrides
 
 html {height: 100%; overflow: hidden;}
-body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400;}
+body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; padding-top: 5rem;}
 
 a {color: $primary;}
 a:hover, a:focus {color: $primary - $shift;}
