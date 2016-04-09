@@ -73,7 +73,10 @@ $dom-prev: #9b59b6;
 $dom-scr: #f39c12;
 
 .card {background: $white; border-color: $grey-2;}
-.card .eyecatcher {font-size: 7rem; margin: -0.5rem 0 -1.5rem; text-align: center; color: $primary;}
+// .card .eyecatcher {font-size: 7rem; margin: -0.5rem 0 -1.5rem; text-align: center; color: $primary;}
+.card .eyecatcher {text-align: center; margin: 1.5rem 0 1rem;}
+.card .eyecatcher img {width: 7rem; height: 7rem;}
+
 .card .list-group:first-child .list-group-item:first-child {border-top: 0;}
 .card .list-group:last-child .list-group-item:last-child {border-bottom: 0;}
 .card .list-group-item h3 {margin: 0;}
