@@ -1,3 +1,4 @@
+
 // variables
 
 $white:             #FFFFFF;
@@ -31,7 +32,7 @@ $transparent:       rgba(0,0,0,0);
 // global overrides
 
 html {height: 100%; overflow: hidden;}
-body {font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400;}
+body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400;}
 
 a {color: $primary;}
 a:hover, a:focus {color: $primary - $shift;}
@@ -48,9 +49,3 @@ input[type=checkbox].chckbx-pls {display: none;}
 input[type=checkbox].chckbx-pls + label, input[type=checkbox].chckbx-pls:checked + label {height: 31px; width: 31px; display: block; padding: 0; margin: 0; cursor: pointer;}
 input[type=checkbox].chckbx-pls + label:before {content: "\e94a"; color: $grey-3; font-size: 1.9375rem;}
 input[type=checkbox].chckbx-pls:checked + label:before {content: "\e94b"; color: $primary;}
-
-// navbar
-
-// .navbar {border-bottom: $brd-wdt solid $brd-drk; border-radius: 0; background: $white;}
-// .navbar .container-fluid {padding: 0;}
-// .navbar .navbar-brand {font-weight: 700; color: $primary; margin-right: 2rem;}
