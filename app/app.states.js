@@ -8,6 +8,11 @@
             .state('layout', {
                 abstract: true,
                 templateUrl: 'app/layout.html'
-            });
+            })
+            .state('law', {
+                url: '/law',
+                templateUrl: 'app/law.html',
+                parent: 'layout'
+            })
     }
 })();
