@@ -18,5 +18,8 @@
   "homepage": "https://github.com/vlki/digital-mom#readme",
   "devDependencies": {
     "express": "^4.13.4"
-  }
+  },
+  "engines": {
+    "node": "5.9.0"
+  },
 }
