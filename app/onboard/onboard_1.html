@@ -1,4 +1,43 @@
-<form>
+<div class="row">
+   <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+     <div class="card card-block">
+       <h2 class="card-title">Preventivní péče na jednom místě</h2>
+       <p class="card-text">Abychom vám mohli doporučit vhodné kroky zdravotní prevence, potřebujeme znát:</p>
+
+       <form>
+         <fieldset class="form-group">
+           <label for="dob">Věk</label>
+           <input type="date" class="form-control" id="dob" placeholder="—> datepicker" ng-model="vm.age">
+         </fieldset>
+
+         <fieldset class="form-group">
+           <label for="gender">Pohlaví</label>
+           <div class="btn-group btn-group-full" data-toggle="buttons">
+             <label class="btn btn-primary active">
+               <input type="radio" name="gender" id="1" autocomplete="off" checked> Muž
+             </label>
+             <label class="btn btn-primary">
+               <input type="radio" name="gender" id="2" autocomplete="off"> Žena
+             </label>
+             <label class="btn btn-primary">
+               <input type="radio" name="gender" id="0" autocomplete="off"> Neuvedu
+             </label>
+           </div>
+           <!-- <select ng-model="vm.sex">
+               <option value="male">Muž</option>
+               <option value="female">Žena</option>
+               <option value="undefined">Neuvedu</option>
+           </select> -->
+         </fieldset>
+         <button class="btn btn-primary" ng-click="vm.cont()">Začít!</button>
+       </form>
+
+     </div>
+   </div>
+ </div>
+
+
+<!-- <form>
     Vek:
     <input type="number" ng-model="vm.age" />
 
@@ -9,4 +48,4 @@
     </select>
 
     <button ng-click="vm.cont()">Continue!</button>
-</form>
+</form> -->
