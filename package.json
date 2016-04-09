@@ -1,0 +1,22 @@
+{
+  "name": "digital-mom",
+  "version": "1.0.0",
+  "description": "Yo!",
+  "main": "devserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlki/digital-mom.git"
+  },
+  "author": "",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/vlki/digital-mom/issues"
+  },
+  "homepage": "https://github.com/vlki/digital-mom#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
