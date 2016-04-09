@@ -6,6 +6,7 @@
 // variables
 
 $white:             #FFFFFF;
+$grey-0:            #F3F5F7;
 $grey-1:            #ECEFF2;
 $grey-2:            #E0E4E9;
 $grey-3:            #CAD1D9;
@@ -28,7 +29,7 @@ $brd-drk:           $grey-4;
 $fnt-sm:            0.8rem;
 $fnt-col-faded:     $grey-6;
 
-//$primary:           #3498db;
+//$primary:         #3498db;
 $primary:           #0275d8;
 $secondary:         #2ecc71;
 $warning:           #e67e22;
@@ -41,7 +42,7 @@ $transparent:       rgba(0,0,0,0);
 // global overrides
 
 html {height: 100%;}
-body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; padding-top: 5rem;}
+body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; padding-top: 5rem; background: $grey-0;}
 
 a {color: $primary;}
 a:hover, a:focus {color: $primary - $shift;}
@@ -62,3 +63,8 @@ h3 {font-size: 1.25rem; font-weight: 700; margin: 1rem 0 1rem;}
 
 .navbar-dark {background: $primary;}
 .navbar-brand {font-weight: 700;}
+
+
+// cards
+
+.card {background: $white; border: $grey-4;}
