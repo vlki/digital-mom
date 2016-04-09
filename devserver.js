@@ -30,7 +30,17 @@ app.use(express.static('./'));
 app.use(proxyMiddleware(['/api'], {
     target: 'http://tunnel.ki-wi.cz:4321',
     changeOrigin: true,
-    logLevel: 'warn'
+    logLevel: 'warn',
+    onProxyRes: function(proxyRes, req, res) {
+        // remove httonly in set-cookie header
+        if (proxyRes.headers['set-cookie'] && proxyRes.headers['set-cookie'].length === 1) {
+            var setCookieSplit = proxyRes.headers['set-cookie'][0].split('; ');
+
+            if (setCookieSplit.length === 4) {
+                proxyRes.headers['set-cookie'] = [ setCookieSplit[0] + '; ' + setCookieSplit[1] + '; ' + setCookieSplit[2] ];
+            }
+        }
+    }
 }));
 
 // Any non-matched by static deep link calls should return index.html

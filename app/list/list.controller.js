@@ -12,10 +12,10 @@
 
         function activate() {
             // Check if there is the right cookie!
-            // if (!$cookies.get('sessionKey')) {
-            //     $state.go('onboard-1');
-            //     return;
-            // }
+            if (!$cookies.get('sessionKey')) {
+                $state.go('onboard-1');
+                return;
+            }
         }
     }
 })();
