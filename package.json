@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/vlki/digital-mom#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "http-proxy-middleware": "^0.13.0"
   },
   "engines": {
     "node": "5.9.0"

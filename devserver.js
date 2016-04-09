@@ -3,7 +3,7 @@
 
 var express = require('express');
 //var bodyParser = require('body-parser');
-//var proxyMiddleware = require('http-proxy-middleware');
+var proxyMiddleware = require('http-proxy-middleware');
 
 var app = express();
 var port = process.env.PORT || 8001
@@ -26,12 +26,12 @@ app.use(express.static('./'));
 //         .end();
 // });
 
-// // Proxy API calls to the remote dev server
-// app.use(proxyMiddleware(['/web', '/server'], {
-//     target: 'http://104.155.59.182/maven',
-//     changeOrigin: true,
-//     logLevel: 'warn'
-// }));
+// Proxy API calls to the remote dev server
+app.use(proxyMiddleware(['/api'], {
+    target: 'http://tunnel.ki-wi.cz:4321',
+    changeOrigin: true,
+    logLevel: 'warn'
+}));
 
 // Any non-matched by static deep link calls should return index.html
 app.use('/*', express.static('./index.html'));
